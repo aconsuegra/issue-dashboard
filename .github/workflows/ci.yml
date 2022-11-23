@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Check out source
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Build and Test
       run: |
         npm ci
@@ -29,9 +29,9 @@ jobs:
 
     steps:
     - name: Check out source
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Check out distribution branch
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         ref: 'dist'
         path: 'dist'
@@ -75,7 +75,7 @@ jobs:
 
     steps:
     - name: Check out source
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Check out documentation branch
       uses: actions/checkout@v2
       with:
